@@ -29,9 +29,7 @@
 	};
 
 	chosen {
-		bootargs = "console=ttyPS0,115200 root=/dev/ram rw earlyprintk";
-		linux,stdout-path = &uart1;
-		stdout-path = &uart1;
+		bootargs = "console=hvc0,115200 root=/dev/ram rw earlyprintk";
 	};
 };
 
